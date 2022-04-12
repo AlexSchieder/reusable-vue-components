@@ -1,6 +1,8 @@
 import { defineConfig } from 'windicss/helpers'
+import plugin from 'windicss/plugin'
 
 export default defineConfig({
+  transformCSS: "pre",
   theme: {
     extend: {
      //
