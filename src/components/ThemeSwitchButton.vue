@@ -3,7 +3,7 @@
 		@click="changeTheme()"
 		aria-label="toggle to change color-mode"
 		title="toggle to change color-mode"
-		class="fixed right-4 p-2 bg-gray-100 dark:bg-gray-800 rounded-full text-xl hover:bg-gray-300 hover:dark:bg-gray-700 rounded-full flex items-center content-center"
+		class="button button-rounded fixed right-4 bg-gray-100 dark:bg-gray-800 text-xl hover:bg-gray-300 hover:dark:bg-gray-700 border-transparent"
 	>
 		<span aria-live="assertive" class="sr-only">
 			current color-mode is {{ theme }}

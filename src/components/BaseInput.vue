@@ -8,7 +8,7 @@
       :type="type"
       :value="modelValue"
       @input="handleInput"
-      class="mt-1 block w-full rounded border-gray-300 h-12 px-4 focus:border-blue-700 dark:focus:border-blue-300 dark:bg-gray-800 dark:border-gray-700"
+      class="mt-1 block w-full rounded border-gray-300 h-12 px-4 focus:border-purple-700 dark:focus:border-purple-300 dark:bg-gray-800 dark:border-gray-700"
     />
   </div>
 </template>
