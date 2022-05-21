@@ -2,8 +2,10 @@
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
 import Home from './views/Home.vue'
+import ThemeBtn from './components/ThemeSwitchButton.vue'
 </script>
 
 <template>
-  <Home msg="Hello Vue 3 + TypeScript + Vite" />
+  <ThemeBtn />
+  <Home />
 </template>
