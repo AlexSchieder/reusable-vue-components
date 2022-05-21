@@ -1,22 +1,22 @@
 <template>
-	<component
+	<!-- <component
 		:is="elementTag"
   	:href="href"
-		class="button button-style"
+		class="button"
 	>
 		<slot></slot>
-	</component>
+	</component> -->
+	<button class="button" type="button">
+		<slot></slot>
+	</button>
 </template>
-<style lang="scss" scoped>
-
-</style>
 
 <script lang="ts" setup>
-import { computed } from 'vue'
+/*import { computed } from 'vue'
 
 const props = defineProps<{ 
 	href?: string
 }>();
 
- const elementTag = computed(() => props.href ? 'a' : 'button')
+ const elementTag = computed(() => props.href ? 'a' : 'button')*/
 </script>

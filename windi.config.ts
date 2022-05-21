@@ -13,7 +13,7 @@ export default defineConfig({
 
     'button-style': 'text-purple-600 border-purple-200 dark:border-purple-800 hover:(text-white bg-purple-600) ring-purple-600',
 
-    'button-rounded': 'p-2 rounded-full min-w-[44px]'
+    'button-rounded': 'p-2 rounded-full min-w-[44px] bg-gray-100 dark:bg-gray-800 text-xl hover:bg-gray-300 hover:dark:bg-gray-700 border-transparent'
    },
   darkMode: 'class',
   plugins: [

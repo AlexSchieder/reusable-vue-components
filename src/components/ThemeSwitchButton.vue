@@ -1,9 +1,9 @@
 <template>
-	<button
+	<BaseButton
 		@click="changeTheme()"
 		aria-label="toggle to change color-mode"
 		title="toggle to change color-mode"
-		class="button button-rounded fixed right-4 bg-gray-100 dark:bg-gray-800 text-xl hover:bg-gray-300 hover:dark:bg-gray-700 border-transparent"
+		class="button-rounded fixed right-4"
 	>
 		<span aria-live="assertive" class="sr-only">
 			current color-mode is {{ theme }}
@@ -17,14 +17,18 @@
 		<svg v-else-if="theme === 'system'" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 			<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
 		</svg>
-	</button>
+	</BaseButton>
 </template>
 
 <script lang="ts">
 import { defineComponent, ref } from "vue"
+import BaseButton from './BaseButton.vue'
 
 export default defineComponent({
   name: 'ThemeBtn',
+	components: {
+		BaseButton
+	},
 
   setup: () => {
     const theme = ref('');
