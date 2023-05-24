@@ -8,7 +8,7 @@ import BaseDropdown from './components/BaseDropdown.vue';
 
 <template>
   <a href="#main" class="sr-only">skip to content</a>
-  <header class="bg-gray-200 flex justify-end">
+  <header class="bg-gray-200 dark:bg-gray-700 flex justify-end">
     <MainNavigation />
     <ThemeBtn />
     <!-- <BaseDropdown /> -->

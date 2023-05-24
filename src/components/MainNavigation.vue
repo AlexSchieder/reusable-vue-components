@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { ref } from 'vue'
 import Button from './BaseButton.vue'
-import Navigation from './BaseNavigation.vue';
+//import Navigation from './BaseNavigation.vue';
 
 const isOpen = ref(false)
 
@@ -11,7 +11,7 @@ const links = ref([{ name: 'Home', link: '/' }, { name: 'Login', link: '/login' 
 
 <template>
 	<Button
-		class="button-rounded relative z-10 bg-gray-200 hover:bg-gray-300 lg:hidden"
+		class="button-rounded relative z-10 bg-gray-200 dark:bg-gray-700 hover:(bg-gray-300 dark:bg-gray-600) lg:hidden mr-20"
 		@click="isOpen = !isOpen"
 	>
 		<span class="sr-only">Open main menu</span>
@@ -27,13 +27,13 @@ const links = ref([{ name: 'Home', link: '/' }, { name: 'Login', link: '/login' 
 		<nav 
 			aria-label="Main Navigation"
 			:class="isOpen ? 'block': 'sr-only'"
-			class="bg-gray-100 p-2"
+			class="bg-gray-100 dark:bg-gray-800 p-2"
 		>
 			<ul class="ml-2 bg-gray-200 dark:bg-gray-700 rounded">
 				<li v-for="item in links"
 					class="p-2 first:rounded-t last:rounded-b hover:(bg-gray-300 dark:bg-gray-600)"
 				>
-					<router-link :to="item.link" class="w-full inline-block">{{ item.name }}</router-link>
+					<router-link :to="item.link" @click="isOpen = !isOpen" class="w-full inline-block">{{ item.name }}</router-link>
 				</li>
 			</ul>
 		</nav>
