@@ -3,7 +3,7 @@
 		@click="changeTheme()"
 		aria-label="toggle to change color-mode"
 		title="toggle to change color-mode"
-		class="button-rounded fixed right-4"
+		class="button-rounded absolute top-0 right-0"
 	>
 		<span aria-live="assertive" class="sr-only">
 			current color-mode is {{ theme }}
