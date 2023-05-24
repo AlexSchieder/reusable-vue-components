@@ -1,9 +1,6 @@
 <script setup lang="ts">
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
 import ThemeBtn from './components/ThemeSwitchButton.vue'
 import MainNavigation from './components/MainNavigation.vue'
-import BaseDropdown from './components/BaseDropdown.vue';
 </script>
 
 <template>
@@ -11,7 +8,6 @@ import BaseDropdown from './components/BaseDropdown.vue';
   <header class="bg-gray-200 dark:bg-gray-700 flex justify-end">
     <MainNavigation />
     <ThemeBtn />
-    <!-- <BaseDropdown /> -->
   </header>
 
   <main id="main" class="mx-3">
