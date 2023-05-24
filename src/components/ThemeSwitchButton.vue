@@ -47,8 +47,7 @@ export default defineComponent({
 			}
 		}
 
-		checkSystemTheme()
-
+		
 		const changeTheme = function () {
 			if (theme.value === 'system') {
 				theme.value = 'light'
