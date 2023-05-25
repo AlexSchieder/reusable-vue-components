@@ -16,6 +16,8 @@ export default defineConfig({
     'button-rounded': 'p-2 rounded-full min-w-[44px] text-xl border-transparent',
 
     'default': 'bg-gray-100 dark:(bg-gray-800 text-gray-300 font-light) text-gray-700',
+
+    'router-link-active': 'underline',
    },
   darkMode: 'class',
   plugins: [

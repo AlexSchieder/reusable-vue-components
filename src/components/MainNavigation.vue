@@ -5,7 +5,7 @@ import Button from './BaseButton.vue'
 
 const isOpen = ref(false)
 
-const links = ref([{ name: 'Home', link: '/' }, { name: 'Login', link: '/login' }, { name: 'Other', link: '/' }])
+const links = ref([{ name: 'Home', link: '/' }, { name: 'Login', link: '/login' }, { name: 'FAQ', link: '/faq' }])
 
 </script>
 
